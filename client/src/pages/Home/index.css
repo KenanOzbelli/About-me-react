@@ -1,0 +1,22 @@
+.cardBody {
+    transition: 200ms ease-in-out;
+    border-radius: .5rem;
+ 
+        animation: fadeInAnimation ease 3s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards; 
+    
+    }
+     @keyframes fadeInAnimation { 
+        0% { 
+            opacity: 0; 
+        } 
+        100% { 
+            opacity: 1; 
+        } 
+    } 
+    
+.cardBody:hover {
+    transform: scale(1.00004);
+    box-shadow: 7px 7px 20px #658DA6;
+}

@@ -1,0 +1,55 @@
+.Projone, .FlashCard, .BatonPass, .EmployeeDir, .FitnessTrack, .PassWord{
+    display: inline-block;
+    font-size: x-large;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+  .Projone:hover, .FlashCard:hover {
+    background-color: rgb(248, 208, 7);
+    color: white;
+}
+.FitnessTrack{
+    background-color: rgb(11, 114, 179);
+}
+.FitnessTrack:hover{
+    background-color: rgb(19, 185, 19);
+    color: white;
+}
+.EmployeeDir{
+    background-color: navy;
+}
+.EmployeeDir:hover, .PassWord:hover{
+    background-color: red;
+    color:white;
+}
+.BatonPass:hover{
+    background-color: black;
+    color: white;
+}
+.BatonPass{
+    background-color: darkgray;
+}
+.FlashCard, .PassWord{
+    background-color: lightgray;
+}
+
+.Projone{
+    background-color: #283459;
+}
+
+
+.portBody {
+    transition: 200ms ease-in-out;
+    border-radius: .5rem;
+}
+
+.portBody:hover {
+    transform: scale(1.00004);
+    box-shadow: 10px 10px 20px 5px grey;
+}
