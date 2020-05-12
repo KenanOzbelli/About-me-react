@@ -31,9 +31,9 @@ export default class ContactForm extends Component {
     const { name, email, message } = this.state;
 
     return (
-      <>
-        <Card className="m-5">
-          <Card.Header className="m-3 text-center bg-dark text-light">
+      <div>
+        <Card className="m-5 bg-light" border='dark'>
+          <Card.Header className="m-3 text-center text-light header" style={{background:'#0D2840'}}>
             <h1 className="text-center">Contact Page</h1>
            
           </Card.Header>
@@ -89,13 +89,13 @@ export default class ContactForm extends Component {
                 />
               </div>
 
-              <button className="btn btn-primary" type="submit">
+              <button className="btn text-white" type="submit" style={{background:'#4C0BD9'}}>
                 Submit
               </button>
             </form>
           </Card.Body>
         </Card>
-      </>
+      </div>
     );
   }
 }

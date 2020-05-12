@@ -13,7 +13,7 @@ export default class Portfolio extends Component {
     return (
       <>
         <div className="m-5">
-          <h2 className="text-center">Portfolio</h2>
+          <h1 className="text-center header">Portfolio</h1>
           <hr />
         </div>
         <CardDeck className="m-5">
@@ -153,7 +153,7 @@ export default class Portfolio extends Component {
           </Card>
         </CardDeck>
         <CardDeck className="m-5">
-          <Card className="portBody">
+          <Card className="portBodyRight">
             <Card.Img
               src={EmployeeDirect}
               style={{ width: "100%", borderRadius: ".5rem .5rem 0 0" }}
@@ -199,7 +199,7 @@ export default class Portfolio extends Component {
               </button>
             </ListGroup>
           </Card>
-          <Card className="portBody">
+          <Card className="portBodyRight">
             <Card.Img
               src={FitnessTracker}
               style={{ width: "100%", borderRadius: ".5rem .5rem 0 0" }}
@@ -245,7 +245,7 @@ export default class Portfolio extends Component {
               </button>
             </ListGroup>
           </Card>
-          <Card className="portBody">
+          <Card className="portBodyRight">
             <Card.Img
               src={Password}
               style={{ width: "100%", borderRadius: ".5rem .5rem 0 0" }}
