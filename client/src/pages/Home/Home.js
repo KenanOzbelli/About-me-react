@@ -18,7 +18,7 @@ class HomePage extends Component {
               className="text-center text-light header"
               style={{ background: "#0D2840" }}
             >
-              <h1>About Me</h1>
+              <h1>Welcome!</h1>
             </Card.Header>
             <Row>
               <div className="mt-3 col-md-4 col-lg-3">
@@ -35,15 +35,12 @@ class HomePage extends Component {
               </div>
 
               <div className="mt-3 col-lg-7 col-md-6">
-                <h5 style={{ marginRight: "50px" }}>
-                  Welcome to my Page. I am a Certified Full Stack Web Developer.
-                </h5>
                 <h5>
-                  I am currently a free-lance Web Developer helping clients
+                  I'm a free-lance Web Developer helping clients
                   build websites to their vision.
                 </h5>
                 <h5>
-                  I am fueled by my passion to always keep on learning new
+                  fueled by my passion to always keep on learning new
                   technologies and implementing them, I consider myself a forver
                   student, eager to both build off of my academic foundations in
                   Web Developement and stay in touch with the latest feature in
