@@ -46,9 +46,9 @@
 
 
 .portBody {
+    box-shadow: 5px 5px 10px 5px grey ;
     transition: 200ms ease-in-out;
     border-radius: .5rem;
-    
     animation: fadeInLeft ease 5s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
@@ -76,7 +76,7 @@
 .portBodyRight {
     transition: 200ms ease-in-out;
     border-radius: .5rem;
-    
+    box-shadow: 5px 5px 10px 5px grey ;
     animation: fadeInRight ease 5s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 

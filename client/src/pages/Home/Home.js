@@ -34,10 +34,26 @@ class HomePage extends Component {
                 />
               </div>
 
-              <div className="mt-3 col-lg-8 col-md-7">
+              <div className="mt-3 col-lg-7 col-md-6">
                 <h5 style={{ marginRight: "50px" }}>
-                  Welcome to my Page. 
-                  I am a Certified Full Stack Web Developer
+                  Welcome to my Page. I am a Certified Full Stack Web Developer.
+                </h5>
+                <h5>
+                  I am currently a free-lance Web Developer helping clients
+                  build websites to their vision.
+                </h5>
+                <h5>
+                  I am fueled by my passion to always keep on learning new
+                  technologies and implementing them, I consider myself a forver
+                  student, eager to both build off of my academic foundations in
+                  Web Developement and stay in touch with the latest feature in
+                  the industry.
+                </h5>
+                <h5>
+                  My hunger for knowledge and determination to turn information
+                  into action has helped contribute to my success in finishing
+                  the top of my class, also helped with building websites for
+                  people with each new webiste more difficult than the last.
                 </h5>
               </div>
             </Row>
@@ -119,7 +135,12 @@ class HomePage extends Component {
             background: "cream",
           }}
         >
-          <Card.Title className='text-center'>Contact Information</Card.Title>
+          <Card.Header
+            className="text-center m-1"
+            style={{ background: "rgb(76, 11, 217)", color: "white" }}
+          >
+            Contact Information
+          </Card.Header>
           <Card.Body>
             <p>Phone Number: 980-621-6153</p>
             <p> Email: Kenan.Ozbelli@gmail.com</p>

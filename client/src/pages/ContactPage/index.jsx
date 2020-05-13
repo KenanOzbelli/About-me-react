@@ -60,7 +60,7 @@ export default class ContactPage extends Component {
               this.setState({ error: "Sorry, Please try again." });
             }
           });
-      }, 3000);
+      }, 4000);
     }
   };
 
@@ -92,9 +92,7 @@ export default class ContactPage extends Component {
           <Modal.Body>
             <p>
               <strong>
-                Your Response has been Recorded has been Recorded you will be
-                contacted in 1-2 business days, you will be redirected to the
-                Home Page.
+                Your Response has been recieved and recorded. Thank you for your time, you will be redirected back to the homepage. 
               </strong>
             </p>
           </Modal.Body>
