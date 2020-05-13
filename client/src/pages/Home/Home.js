@@ -128,7 +128,7 @@ class HomePage extends Component {
             position: "absolute",
             right: "67px",
             top: "257px",
-            bottom: "211px",
+            bottom: "185px",
             background: "cream",
           }}
         >

@@ -12,14 +12,15 @@ class Navigation extends Component {
     });
   }
 
+
   render() {
     const { collapsed } = this.state;
     const targetClass = `collapse navbar-collapse ${!collapsed && 'show'}`;
     const togglerClass = `navbar-toggler ${collapsed && 'collapsed'}`;
 
     return (
-      <div className='Navigation text-center'>
-        <nav className='navbar navbar-expand-lg navbar-light p-0 mb-5' style={{ boxShadow: '10px 10px 5px grey', background: '#6C60BF'}}>
+      <div className='Navigation sticky-top text-center'>
+        <nav className='navbar navbar-expand-lg navbar-light p-0 mb-5' style={{ background: '#6C60BF'}}>
         <div style={{textDecoration:'black', outline:'none'}}>
           <Link style={{ textDecoration:'none', background:'#4C0BD9', outline:'none', color:'white'}} className='navbar-brand p-3 ml-5'  to='/'>Kenan Ozbelli</Link>
         </div>
