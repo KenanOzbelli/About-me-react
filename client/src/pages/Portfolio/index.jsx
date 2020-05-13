@@ -9,7 +9,14 @@ import Password from "../../Images/Password_Gen.png";
 import "./index.css";
 
 export default class Portfolio extends Component {
+
+  componentDidMount(){
+    document.title='Kenan Ozbelli | Portfolio';
+}
+
   render() {
+  
+  
     return (
       <>
         <div className="m-5">

@@ -13,6 +13,10 @@ export default class ContactPage extends Component {
     errShow: false,
   };
 
+  componentDidMount(){
+    document.title='Kenan Ozbelli | Contact';
+};
+
   handleClose = () => {
     this.setState({
       show: false,

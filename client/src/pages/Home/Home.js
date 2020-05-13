@@ -4,7 +4,13 @@ import PDF from "../../Resume/KenanOzbelliResume.pdf";
 import Me from "../../Images/IMG_0495.jpg";
 import "./index.css";
 class HomePage extends Component {
+
+  componentDidMount(){
+      document.title='Kenan Ozbelli | Home';
+  }
+
   render() {
+    
     return (
       <div>
         <Card
