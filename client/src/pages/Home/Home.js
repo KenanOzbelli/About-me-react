@@ -41,7 +41,7 @@ class HomePage extends Component {
                 </h5>
                 <h5>
                   fueled by my passion to always keep on learning new
-                  technologies and implementing them, I consider myself a forver
+                  technologies and implementing them, I consider myself a forever
                   student, eager to both build off of my academic foundations in
                   Web Developement and stay in touch with the latest feature in
                   the industry.
