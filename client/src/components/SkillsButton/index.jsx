@@ -1,25 +1,31 @@
-import React, { useState } from 'react'
-import {Button, Collapse} from 'react-bootstrap'
+import React, { useState } from "react";
+import { Button, Collapse } from "react-bootstrap";
+import "./index.css";
 function SkillButton() {
-    const [open, setOpen] = useState(false);
-  
-    return (
-      <>
-        <Button
-          onClick={() => setOpen(!open)}
-          aria-controls="collapse-text"
-          aria-expanded={open}
-          style={{background:'rgb(108, 96, 191)', textDecoration:'none'}}
-        >
-          Skills
-        </Button>
-        <Collapse in={open}>
-          <div id="collapse-text">
-            React.js | Node.js | Html5 | CSS3 | jQuery | JavaScript |
-          </div>
-        </Collapse>
-      </>
-    );
-  }
-  
-  export default SkillButton;
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      <Button
+        onClick={() => setOpen(!open)}
+        aria-controls="collapse-text"
+        aria-expanded={open}
+        className="skillsButton"
+      >
+        Skills
+      </Button>
+      <Collapse in={open}>
+        <div id="collapse-text" className="text-center">
+          <h1>
+          <i class="fab fa-html5 m-2"></i>
+            <i class="fab fa-css3 m-2"></i>
+            <i class="fab fa-js-square m-2"></i>
+            <i class="fab fa-node m-2"></i>
+          </h1>
+        </div>
+      </Collapse>
+    </>
+  );
+}
+
+export default SkillButton;

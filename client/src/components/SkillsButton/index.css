@@ -1,0 +1,6 @@
+.skillsButton{
+  background-color:  rgb(108, 96, 191);
+}
+.skillsButton:hover{
+    background: rgb(76, 11, 217) ;
+}
