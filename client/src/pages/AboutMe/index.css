@@ -24,9 +24,22 @@ body{
     font-family: 'Roboto', sans-serif;
 
 }  
+.image{
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;
+  }
+
 
 @media only screen and (max-width: 1100px) {
     .infoCard {
         display: none;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .image {
+        height: 150px;
+        width: 150px;
+        text-align: center;
     }
 }

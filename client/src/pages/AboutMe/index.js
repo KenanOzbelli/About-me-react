@@ -3,10 +3,10 @@ import { Card, Row, Col } from "react-bootstrap";
 import PDF from "../../Resume/KenanOzbelliResume.pdf";
 import Me from "../../Images/IMG_0495.jpg";
 import "./index.css";
-class HomePage extends Component {
+class AboutMe extends Component {
 
   componentDidMount(){
-      document.title='Kenan Ozbelli | Home';
+      document.title='Kenan Ozbelli | About Me';
   }
 
   render() {
@@ -24,19 +24,13 @@ class HomePage extends Component {
               className="text-center text-light header"
               style={{ background: "#0D2840" }}
             >
-              <h1>Welcome!</h1>
+              <h1>About Me</h1>
             </Card.Header>
             <Row>
-              <div className="mt-3 col-md-4 col-lg-3">
+              <div className="mt-3 col-md-4 col-lg-3 text-center">
                 <Card.Img
                   src={Me}
-                  style={{
-                    borderRadius: "50%",
-                    height: "220px",
-                    width: "200px",
-                    justifyContent: "center",
-                    marginLeft: "1rem",
-                  }}
+                  className='image'
                 />
               </div>
 
@@ -133,7 +127,7 @@ class HomePage extends Component {
             width: "10rem",
             position: "absolute",
             right: "67px",
-            top: "257px",
+            top: "228px",
             background: "cream",
           }}
         >
@@ -153,4 +147,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage;
+export default AboutMe;

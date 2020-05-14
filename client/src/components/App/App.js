@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Navigation from '../../components/Navigation/Navigation';
 import Footer from '../../components/Footer';
-import Home from '../../pages/Home/Home';
+import AboutMe from '../../pages/AboutMe';
 import Portfolio from '../../pages/Portfolio';
 import NotFound from '../../pages/NotFound/NotFound';
+import Home from '../../pages/HomePage/index';
 import './App.css';
+
 import ContactPage from '../../pages/ContactPage';
 
 class App extends Component {
@@ -19,6 +21,7 @@ class App extends Component {
      
             <Switch>
               <Route exact path='/' component={Home} /> 
+              <Route path='/about-me' component={AboutMe}/>
               <Route path='/portfolio' component={Portfolio}/>
               <Route path='/contact' component={ContactPage}/>
               <Route component={NotFound} />

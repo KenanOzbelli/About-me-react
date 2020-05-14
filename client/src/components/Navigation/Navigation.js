@@ -30,7 +30,7 @@ class Navigation extends Component {
           <div className={targetClass} id='navbarSupportedContent'>
             <ul className='navbar-nav mr-auto'>
               <li className='nav-item'>
-                <Link className='nav-link text-white' to='/' onClick={this.toggleCollapse}><i className="fas fa-home"></i> Home</Link>
+                <Link className='nav-link text-white' to='/about-me' onClick={this.toggleCollapse}><i className="fas fa-address-card"></i> About Me</Link>
               </li>
               <li className='nav-item'>
                 <Link className='nav-link text-white' to='/portfolio' onClick={this.toggleCollapse}><i className="fas fa-portrait"></i> Portfolio</Link>
