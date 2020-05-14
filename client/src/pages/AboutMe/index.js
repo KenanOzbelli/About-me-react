@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import PDF from "../../Resume/KenanOzbelliResume.pdf";
 import Me from "../../Images/IMG_0495.jpg";
+import SkillsButton from '../../components/SkillsButton'
 import "./index.css";
 class AboutMe extends Component {
 
@@ -119,6 +120,9 @@ class AboutMe extends Component {
                 </Col>
               </Row>
             </Card>
+            <div className='text-center m-3'>
+            <SkillsButton/>
+            </div>
           </Card.Body>
         </Card>
         <Card
