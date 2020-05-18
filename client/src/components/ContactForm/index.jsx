@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Card} from "react-bootstrap";
-
+import './index.css'
 
 export default class ContactForm extends Component {
   state = {
@@ -89,7 +89,7 @@ export default class ContactForm extends Component {
                 />
               </div>
 
-              <button className="btn text-white" type="submit" style={{background:'#4C0BD9'}}>
+              <button className="btn text-white contactBtn" type="submit">
                 Submit
               </button>
             </form>

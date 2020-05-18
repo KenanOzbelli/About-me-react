@@ -21,6 +21,8 @@ function SkillButton() {
             <i class="fab fa-css3 m-2"></i>
             <i class="fab fa-js-square m-2"></i>
             <i class="fab fa-node m-2"></i>
+            <i class="fab fa-react m-2 text-primary"></i>
+            <i class="fab fa-bootstrap m-2 "></i>
           </h1>
         </div>
       </Collapse>
