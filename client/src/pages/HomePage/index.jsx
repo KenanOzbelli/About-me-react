@@ -11,7 +11,7 @@ class Home extends Component{
 
         return(
             <>
-            HOME PAGE
+            <h1 className='text-center'>Welcome To My Page</h1>
             </>
 
         )
