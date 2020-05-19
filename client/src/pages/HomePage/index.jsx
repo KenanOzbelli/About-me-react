@@ -11,7 +11,9 @@ class Home extends Component{
 
         return(
             <>
-            <h1 className='text-center'>Welcome To My Page</h1>
+            <h1 className='text-center m-3'>Welcome To My Page</h1>
+            <h2 className='text-center m-3'> I am a certified Full-Stack Web Developer</h2>
+            <h3 className='text-center m-3'> Based in Charlotte, NC</h3>
             </>
 
         )

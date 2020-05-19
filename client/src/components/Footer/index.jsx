@@ -1,13 +1,34 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
 
 export default function Footer() {
-    return(
+    return (
         <>
-            <Row className=' mt-5 m-0 p-2' style={{borderTop:'8px solid #4C0BD9', background:'#6C60BF'}} >
+            <Row className=' mt-5 m-0 p-2'
+                style={
+                    {
+                        borderTop: '8px solid #4C0BD9',
+                        background: '#6C60BF'
+                    }
+            }>
                 <Col>
-                    <div className='text-center text-white' >
-                        <p> &copy; Copyright Kenan Ozbelli</p>
+                    <div className='text-center'>
+                        <p>
+                            &copy; Copyright Kenan Ozbelli</p>
+                        <h3>
+                            <button style={
+                                {
+                                    textDecoration: 'none',
+                                    background: 'none',
+                                    border: 'none',
+                                    color: 'black'
+                                }
+                            }>
+                            <i class="fab fa-github"></i>
+                            </button>
+                            <i class="fab fa-linkedin m-2"></i>
+                            <i class="fas fa-envelope-square m-2"></i>
+                        </h3>
                     </div>
                 </Col>
             </Row>
