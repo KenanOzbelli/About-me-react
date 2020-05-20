@@ -16,7 +16,6 @@ class Home extends Component{
             <h2 className='text-center m-3 animate'> I am a certified Full-Stack Web Developer</h2>
             <h3 className='text-center m-3 animate'> Based in Charlotte, NC</h3>
             <h4 className='text-center m-5 slideLeft'> <button className='exploreButton p-3' style={{border:'none',borderRadius:'.3rem', color:'white'}}>Explore My Page</button></h4>
-            <p>this is a test</p>
             </>
 
         )
