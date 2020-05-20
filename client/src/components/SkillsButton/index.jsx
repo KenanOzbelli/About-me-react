@@ -12,7 +12,7 @@ function SkillButton() {
         aria-expanded={open}
         className="skillsButton"
       >
-        Skills hello
+        Skills
       </Button>
       <Collapse in={open}>
         <div id="collapse-text" className="text-center">
