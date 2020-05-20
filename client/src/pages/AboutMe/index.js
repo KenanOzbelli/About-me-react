@@ -8,6 +8,7 @@ class AboutMe extends Component {
 
   componentDidMount(){
       document.title='Kenan Ozbelli | About Me';
+      document.body.style ='background: none';
   }
 
   render() {

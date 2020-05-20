@@ -15,6 +15,7 @@ export default class ContactPage extends Component {
 
   componentDidMount(){
     document.title='Kenan Ozbelli | Contact';
+    document.body.style ='background: none';
 };
 
   handleClose = () => {

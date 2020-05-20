@@ -8,6 +8,7 @@ import NotFound from '../../pages/NotFound/NotFound';
 import Home from '../../pages/HomePage/index';
 import './App.css';
 
+
 import ContactPage from '../../pages/ContactPage';
 
 class App extends Component {
@@ -20,7 +21,7 @@ class App extends Component {
           <Navigation />
      
             <Switch>
-              <Route exact path='/' component={Home} /> 
+              <Route exact path='/' component={Home}/> 
               <Route path='/about-me' component={AboutMe}/>
               <Route path='/portfolio' component={Portfolio}/>
               <Route path='/contact' component={ContactPage}/>

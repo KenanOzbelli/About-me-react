@@ -1,8 +1,35 @@
-.backgroundImage{
-
-        background-image: url(https://www.desktopbackground.org/download/o/2015/06/01/957548_charlotte-wallpapers_1920x1080_h.jpg);
-        position: fixed;
-
-        
-    
+.animate{
+    animation: 1s ease-out 0s 1 bottomToTop;
 }
+.exploreButton{
+    background-color:  rgb(108, 96, 191);
+    animation: createBox 1s;
+    height: 60px;
+    width:206.11px;
+    transition: all 1s;
+  }
+  .exploreButton:hover{
+      background: rgb(76, 11, 217);
+      height: 90px;
+      width:250px;
+      
+  }
+  @keyframes createBox{
+    from{
+        transform: scale(0);
+
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+
+    @keyframes bottomToTop {
+        0% {
+            transform: translateY(1000%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
