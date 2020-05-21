@@ -46,7 +46,7 @@
 
 
 .portBody {
-    box-shadow: 5px 5px 10px 5px grey ;
+    box-shadow: 5px 5px 10px 5px #445 ;
     transition: 200ms ease-in-out;
     border-radius: .5rem;
     animation: fadeInLeft ease 5s; 
@@ -67,7 +67,7 @@
 
 .portBody:hover {
     transform: scale(1.00004);
-    box-shadow: 10px 10px 20px 5px grey;
+    box-shadow: 10px 10px 20px 5px #445;
 }
 
 
@@ -75,7 +75,7 @@
 .portBodyRight {
     transition: 200ms ease-in-out;
     border-radius: .5rem;
-    box-shadow: 5px 5px 10px 5px grey ;
+    box-shadow: 5px 5px 10px 5px #445;
     animation: fadeInRight ease 5s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
@@ -95,5 +95,5 @@
 
 .portBodyRight:hover {
     transform: scale(1.00004);
-    box-shadow: 10px 10px 20px 5px grey;
+    box-shadow: 10px 10px 20px 5px #445;
 }

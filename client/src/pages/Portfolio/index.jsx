@@ -12,7 +12,9 @@ export default class Portfolio extends Component {
 
   componentDidMount(){
     document.title='Kenan Ozbelli | Portfolio';
-    document.body.style='background: none'
+    document.body.style='';
+    
+   
 }
 
   render() {
@@ -21,7 +23,7 @@ export default class Portfolio extends Component {
     return (
       <>
         <div className="m-5">
-          <h1 className="text-center header">Portfolio</h1>
+          <h1 className="text-center header text-white p-3" style={{background:'#0D2840', borderRadius:'.3rem .3rem 0 0'}}>Portfolio</h1>
           <hr />
         </div>
         <CardDeck className="m-5">
