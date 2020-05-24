@@ -24,10 +24,28 @@ export default function Footer() {
                                     color: 'black'
                                 }
                             }>
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                             </button>
-                            <i class="fab fa-linkedin m-2"></i>
-                            <i class="fas fa-envelope-square m-2"></i>
+                            <button style={
+                                {
+                                    textDecoration: 'none',
+                                    background: 'none',
+                                    border: 'none',
+                                    color: 'black'
+                                }
+                            }>
+                            <i className="fab fa-linkedin m-2"></i>
+                            </button>
+                            <button style={
+                                {
+                                    textDecoration: 'none',
+                                    background: 'none',
+                                    border: 'none',
+                                    color: 'black'
+                                }
+                            }>
+                            <i className="fas fa-envelope-square m-2"></i>
+                            </button>
                         </h3>
                     </div>
                 </Col>

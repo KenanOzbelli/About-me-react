@@ -34,7 +34,7 @@
         }
     }
 body{
-    background-image: url(${img}) ;
+    background-image: url('../../Images/charlotteImage.jpg') ;
     background-attachment: fixed; 
     min-height: 100%; background-repeat: no-repeat; 
     background-position: center; 

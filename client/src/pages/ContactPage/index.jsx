@@ -49,7 +49,7 @@ export default class ContactPage extends Component {
                         this.setState({error: "Sorry, Please try again."});
                     }
                 });
-            }, 4000);
+            }, 5000);
         }
     };
 
