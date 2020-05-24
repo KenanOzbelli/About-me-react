@@ -1,11 +1,13 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
+import image from '../../Images/charlotteImage.jpg'
 import './index.css'
 
 class Home extends Component {
 
     componentDidMount() {
         document.title = 'Kenan Ozbelli | Home'
+        document.body.style=`background:${image}`
   }
     render() {
 

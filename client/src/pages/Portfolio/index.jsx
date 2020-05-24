@@ -12,7 +12,7 @@ export default class Portfolio extends Component {
 
   componentDidMount(){
     document.title='Kenan Ozbelli | Portfolio';
-    document.body.style='';
+    document.body.style='background:none';
     
    
 }
