@@ -15,13 +15,13 @@ class Home extends Component {
         return (
             <>
             <div style={{textDecoration:'none', border:'none'}} className='animate'>
-                <h1 className='text-center m-3'>Welcome To My Page</h1>
+                <h1 className='text-center m-3 homeText'>Welcome To My Page</h1>
             
             
-                <h2 className='text-center m-3'>
+                <h2 className='text-center m-3 homeText'>
                     I am a certified Full-Stack Web Developer</h2>
         
-                <h3 className='text-center m-3'>
+                <h3 className='text-center m-3 homeText'>
                     Based in Charlotte, NC</h3>
                 </div>
                 <Link to='/about-me'>

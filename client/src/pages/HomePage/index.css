@@ -31,6 +31,9 @@
 100% {opacity:1;}
 }
 
+.homeText{
+    color:rgb(13, 40, 64);
+}
 
 .exploreButton{
     background-color:  rgb(108, 96, 191);
