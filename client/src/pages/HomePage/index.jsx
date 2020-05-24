@@ -13,7 +13,7 @@ class Home extends Component {
 
 
         return (
-            <>
+            <div>
             <div>
                 <h1 className='text-center m-3 animate'>Welcome To My Page</h1>
             </div>
@@ -39,7 +39,7 @@ class Home extends Component {
                     </h4>
                 </Link>
             </div>
-            </>
+            </div>
 
         )
     }
