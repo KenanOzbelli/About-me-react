@@ -1,7 +1,7 @@
-/* .animate{
-    animation: 1s ease-out 0s 1 bottomToTop;
+.animate{
+    /* animation: 1s ease-out 0s 1 bottomToTop; */
     font-family: 'Roboto', sans-serif;
-} */
+}
 .exploreButton{
     background-color:  rgb(108, 96, 191);
     animation: createBox 1s;
