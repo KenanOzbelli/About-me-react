@@ -8,7 +8,7 @@ body{
   
     border-radius: .5rem;
  
-        animation: fadeInLeft ease 3s; 
+        animation: fadeInLeft ease 2s; 
         animation-iteration-count: 1; 
         animation-fill-mode: forwards; 
     

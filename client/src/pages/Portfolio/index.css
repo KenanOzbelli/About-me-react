@@ -49,7 +49,7 @@
     box-shadow: 5px 5px 10px 5px #445 ;
     transition: 200ms ease-in-out;
     border-radius: .5rem;
-    animation: fadeInLeft ease 5s; 
+    animation: fadeInLeft ease 3s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
 }
@@ -76,7 +76,7 @@
     transition: 200ms ease-in-out;
     border-radius: .5rem;
     box-shadow: 5px 5px 10px 5px #445;
-    animation: fadeInRight ease 5s; 
+    animation: fadeInRight ease 3s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
 

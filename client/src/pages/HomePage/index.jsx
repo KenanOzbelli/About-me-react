@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
+import img from '../../Images/charlotteImage.jpg';
 import './index.css'
 
 class Home extends Component {
 
     componentDidMount() {
         document.title = 'Kenan Ozbelli | Home'
-        document.body.style = 'background: url(https://content.fortune.com/wp-content/uploads/2019/07/GettyImages-1020752970-e1563589766704.jpg);background-attachment: fixed; min-height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover;'
+        document.body.style = `background-image: url(${img}) ;background-attachment: fixed; min-height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover;`
     }
     render() {
 
@@ -18,8 +19,6 @@ class Home extends Component {
                     I am a certified Full-Stack Web Developer</h2>
                 <h3 className='text-center animate m-3'>
                     Based in Charlotte, NC</h3>
-                
-                
                 <Link to='/about-me'>
                     <h4 className='text-center m-5 slideLeft'>
                         <button className='exploreButton p-3'

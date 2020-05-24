@@ -7,3 +7,18 @@
 .contactBtn:hover{
     background: #4C0BD9;
 }
+
+.cardBodyUp{
+    animation: topToBottom ease-in 2s;
+}
+
+@keyframes topToBottom {
+    0% {
+       opacity: 1;
+       transform: translateY(-500px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+}

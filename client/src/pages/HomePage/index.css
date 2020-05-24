@@ -13,7 +13,6 @@
       background: rgb(76, 11, 217);
       height: 90px;
       width:250px;
-      
   }
   @keyframes createBox{
     from{
@@ -34,3 +33,11 @@
             transform: translateY(0);
         }
     }
+body{
+    background-image: url(${img}) ;
+    background-attachment: fixed; 
+    min-height: 100%; background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+  
+}

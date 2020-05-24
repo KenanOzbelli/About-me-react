@@ -32,7 +32,7 @@ export default class ContactForm extends Component {
 
     return (
       <div>
-        <Card className="m-5 bg-light" border='dark'>
+        <Card className="m-5 bg-light cardBodyUp" border='dark'>
           <Card.Header className="m-3 text-center text-light header" style={{background:'#0D2840'}}>
             <h1 className="text-center">Contact Page</h1>
            

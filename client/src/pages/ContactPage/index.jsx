@@ -35,7 +35,7 @@ export default class ContactPage extends Component {
             let templateParams = {
                 from_name: name,
                 to_name: email,
-                name: 'kenan',
+                name: 'Kenan',
                 message_html: message
             }
 
