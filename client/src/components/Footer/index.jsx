@@ -2,6 +2,7 @@ import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 
 export default function Footer() {
+
     return (
         <>
             <Row className=' mt-5 m-0 p-2'
@@ -16,7 +17,7 @@ export default function Footer() {
                         <p>
                             &copy; Copyright Kenan Ozbelli</p>
                         <h3>
-                            <button style={
+                            <button onClick = {() => { window.location = 'https://github.com/KenanOzbelli' }} style={
                                 {
                                     textDecoration: 'none',
                                     background: 'none',
@@ -26,7 +27,7 @@ export default function Footer() {
                             }>
                             <i className="fab fa-github"></i>
                             </button>
-                            <button style={
+                            <button onClick = {() => {window.location = 'https://www.linkedin.com/in/kenan-ozbelli-9930b5125/'}} style={
                                 {
                                     textDecoration: 'none',
                                     background: 'none',
@@ -34,9 +35,9 @@ export default function Footer() {
                                     color: 'black'
                                 }
                             }>
-                            <i className="fab fa-linkedin m-2"></i>
+                            <i className="fab fa-linkedin"></i>
                             </button>
-                            <button style={
+                            <button onClick = {() => window.location = 'mailto:kenan.ozbelli@gmail.com' } style={
                                 {
                                     textDecoration: 'none',
                                     background: 'none',
@@ -44,7 +45,7 @@ export default function Footer() {
                                     color: 'black'
                                 }
                             }>
-                            <i className="fas fa-envelope-square m-2"></i>
+                            <i className="fas fa-envelope-square"></i>
                             </button>
                         </h3>
                     </div>

@@ -46,7 +46,7 @@ class Navigation extends Component {
                             className='navbar-brand p-3 ml-5'
                             to='/'>Kenan Ozbelli</Link>
                     </div>
-                    <button className={togglerClass}
+                    <button className={togglerClass} style={{margin:'0 3rem'}}
                         onClick={
                             this.toggleCollapse
                         }
@@ -61,7 +61,7 @@ class Navigation extends Component {
                         <ul className='navbar-nav mr-auto'>
 
                             <li className='nav-item'>
-                                <Link className='nav-link text-white m-2' to='/about-me'
+                                <Link className='nav-link text-white ' to='/about-me'
                                     onClick={
                                         this.toggleCollapse
                                 }>
@@ -70,7 +70,7 @@ class Navigation extends Component {
 
 
                             <li className='nav-item '>
-                                <Link className='nav-link text-white m-2' to='/portfolio'
+                                <Link className='nav-link text-white ' to='/portfolio'
                                     onClick={
                                         this.toggleCollapse
                                 }>
@@ -78,7 +78,7 @@ class Navigation extends Component {
                             </li>
 
                             <li className='nav-item '>
-                                <Link className='nav-link text-white m-2' to='/contact'
+                                <Link className='nav-link text-white' to='/contact'
                                     onClick={
                                         this.toggleCollapse
                                 }>

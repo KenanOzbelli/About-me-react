@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { Card, Row, Col } from "react-bootstrap";
 import PDF from "../../Resume/KenanOzbelliResume.pdf";
-import Me from "../../Images/IMG_0495.jpg";
+import Me from "../../Images/IMG_0495_transparent.png";
 import SkillsButton from '../../components/SkillsButton'
 import "./index.css";
+
+
 class AboutMe extends Component {
 
   componentDidMount(){
@@ -67,7 +69,7 @@ class AboutMe extends Component {
               {" "}
               Link to My LinkedIn and Github Porfiles
             </h2>
-            <hr />
+            <hr style={{margin:'20px 200px'}} />
             <Card>
               <Row>
                 <Col>

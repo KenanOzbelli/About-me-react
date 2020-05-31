@@ -1,6 +1,7 @@
 import React, {Component} from "react";
-import {Modal} from "react-bootstrap";
+import {Modal, Row, Col} from "react-bootstrap";
 import ContactForm from "../../components/ContactForm";
+import InTouchCard from '../../components/InTouchCard';
 import {Redirect} from "react-router-dom";
 import API from "../../lib/API";
 import * as emailjs from 'emailjs-com';
@@ -67,9 +68,16 @@ export default class ContactPage extends Component {
 
         return (
             <>
-                <ContactForm onSubmit={
-                    this.handleSubmit
-                }/>
+                <Row>
+                    <Col>
+                        <InTouchCard/>
+                    </Col>
+                    <Col>
+                        <ContactForm onSubmit={
+                            this.handleSubmit
+                        }/>
+                    </Col>
+                </Row>
                 <Modal show={
                         this.state.show
                     }

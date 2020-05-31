@@ -11,9 +11,13 @@
     transition-property: color, background-color;
     
 }
-  .Projone:hover, .FlashCard:hover {
-    background-color: rgb(248, 208, 7);
+  .Projone:hover {
+    background-color: #ffbc3f;
     color: white;
+}
+.FlashCard:hover{
+    background: rgb(248, 208, 7);
+    color:white;
 }
 .FitnessTrack{
     background-color: rgb(11, 114, 179);
@@ -41,7 +45,7 @@
 }
 
 .Projone{
-    background-color: #283459;
+    background-color: #3A4660;
 }
 
 

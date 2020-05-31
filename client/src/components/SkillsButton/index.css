@@ -1,8 +1,14 @@
 .skillsButton{
-  background-color:  rgb(108, 96, 191);
+background: rgb(108, 96, 191);
+text-decoration: none;
+border: none;
+width:100px;
+height: 40px;
+border-radius: .3rem;
+color: white;
 }
 .skillsButton:hover{
-    background: rgb(76, 11, 217) ;
+  background:rgb(76, 11, 217);
 }
 .bootstrap{
   color:#563d7c;
