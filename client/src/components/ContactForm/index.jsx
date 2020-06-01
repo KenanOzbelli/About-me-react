@@ -83,7 +83,7 @@ export default class ContactForm extends Component {
                   id="message"
                   type="message"
                   name="message"
-                  placeholder="Enter a Message to Send"
+                  placeholder="Enter a Message to Send (Optional)"
                   value={message}
                   onChange={this.handleInputChange}
                 />

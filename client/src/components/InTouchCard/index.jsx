@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card} from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 export default function InTouchCard(){
 
@@ -10,7 +10,7 @@ export default function InTouchCard(){
                <h1>Get In Touch</h1>
             </Card.Header>
             <Card.Body>
-                Talya is Gay
+                Blah Blah
             </Card.Body>
         </Card>
         </>

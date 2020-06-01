@@ -1,11 +1,80 @@
 import React, {useState} from "react";
-import { Collapse } from "react-bootstrap";
+import {Collapse} from "react-bootstrap";
 import MySql from "../../Images/mySQL.png";
 import Mongodb from "../../Images/Mongodb.png";
 import Mongoose from '../../Images/mongoose.png';
+import Handlebars from '../../Images/handlebars-js.png';
+import Jquery from '../../Images/jquery.png';
+import MERN from '../../Images/mern-img.png';
+import Sequelize from '../../Images/sequelize.png';
+import liquid from '../../Images/liqiuid_language.png';
+import RBootstrap from '../../Images/React-bootstrap.png';
 import "./index.css";
+
+const images = [
+    {
+        photo: RBootstrap,
+        alt: 'React-Bootstrap'
+    },
+    {
+        photo: MySql,
+        alt: 'MySql'
+    },
+    {
+        photo: Sequelize,
+        alt: 'Sequelize'
+    },
+    {
+        photo: Mongodb,
+        alt: 'Mongodb'
+    }, {
+        photo: Mongoose,
+        alt: 'Mongoose'
+    }, {
+        photo: Handlebars,
+        alt: 'Handlebars'
+    }, {
+        photo: Jquery,
+        alt: 'Jquery'
+    }, {
+        photo: MERN,
+        alt: 'MERN'
+    }, {
+        photo: liquid,
+        alt: 'Liquid'
+    }
+
+];
+
+const logo = [
+    {
+        class: 'fab fa-html5 m-3 html',
+        alt: 'Html 5'
+    },
+    {
+        class: 'fab fa-css3 m-3 text-primary',
+        alt: 'CSS3'
+    },
+    {
+        class: 'fab fa-js-square m-3 text-warning',
+        alt: 'javascript'
+    },
+    {
+        class: 'fab fa-node m-3 text-success',
+        alt: 'node.js'
+    }, {
+        class: 'fab fa-react m-3 react',
+        alt: 'react.js'
+    }, {
+        class: 'fab fa-bootstrap m-3 bootstrap',
+        alt: 'bootstrap'
+    },
+
+
+]
 function SkillButton() {
     const [open, setOpen] = useState(true);
+
 
     return (
         <>
@@ -24,41 +93,33 @@ function SkillButton() {
                     <hr style={
                         {margin: '20px 200px'}
                     }/>
-                    <h1>
-                        <i className="fab fa-html5 m-2 html" alt='Html 5'></i>
-                        <i className="fab fa-css3 m-2 text-primary" alt='CSS3'></i>
-                        <i className="fab fa-js-square m-2 text-warning" alt='JavaScript'></i>
-                        <i className="fab fa-node m-2 text-success" alt='Node.js'></i>
-                        <i className="fab fa-react m-2 react" alt='React.js'></i>
-                        <i className="fab fa-bootstrap m-2 bootstrap " alt='BootStrap'></i>
-                        <img src={MySql}
-                            alt='MySql'
-                            className='m-2'
-                            style={
-                                {
-                                    width: '50px',
-                                    height: '40px'
-                                }
-                            }/>
-                        <img src={Mongodb}
-                            alt='Mongodb'
-                            className='m-2'
-                            style={
-                                {
-                                    width: '40px',
-                                    height: '40px'
-                                }
-                            }/>
-                        <img src={Mongoose}
-                            alt='Mongoose'
-                            className='m-2'
-                            style={
-                                {
-                                    width: '50px',
-                                    height: '40px'
-                                }
-                            }/>
-                    </h1>
+                    <h1 style={
+                        {fontSize: '80px'}
+                    }>
+                        {
+                        logo.map((e, idx) => {
+                            return (
+                                <i className={
+                                        e.class
+                                    }
+                                    alt={
+                                        e.alt
+                                    }
+                                    key={idx}></i>
+                            )
+                        })
+                    }
+                        {
+                        images.map((image, idx) => {
+                            return (
+                                <img src ={image.photo} alt ={image.alt} className='m-3'
+                                    key={idx}
+                                    style={
+                                        {height: '100px'}
+                                    }/>
+                            )
+                        })
+                    } </h1>
                 </div>
             </Collapse>
         </>

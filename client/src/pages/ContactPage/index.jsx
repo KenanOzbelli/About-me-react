@@ -24,13 +24,11 @@ export default class ContactPage extends Component {
     };
 
     handleSubmit = (name, email, message) => {
-        if (!name || !email || !message) {
+        if (!name || !email ) {
             this.setState({show: false, errShow: true});
             return;
 
         } else {
-
-
             this.setState({show: true});
 
             let templateParams = {
