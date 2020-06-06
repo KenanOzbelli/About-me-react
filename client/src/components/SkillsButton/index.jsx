@@ -37,9 +37,6 @@ const images = [
         photo: Jquery,
         alt: 'Jquery'
     }, {
-        photo: MERN,
-        alt: 'MERN'
-    }, {
         photo: liquid,
         alt: 'Liquid'
     }
@@ -48,25 +45,25 @@ const images = [
 
 const logo = [
     {
-        class: 'fab fa-html5 m-3 html',
+        class: 'fab fa-html5 m-3 html phoneView',
         alt: 'Html 5'
     },
     {
-        class: 'fab fa-css3 m-3 text-primary',
+        class: 'fab fa-css3 m-3 text-primary phoneView',
         alt: 'CSS3'
     },
     {
-        class: 'fab fa-js-square m-3 text-warning',
+        class: 'fab fa-js-square m-3 text-warning phoneView',
         alt: 'javascript'
     },
     {
-        class: 'fab fa-node m-3 text-success',
+        class: 'fab fa-node m-3 text-success phoneView',
         alt: 'node.js'
     }, {
-        class: 'fab fa-react m-3 react',
+        class: 'fab fa-react m-3 react phoneView',
         alt: 'react.js'
     }, {
-        class: 'fab fa-bootstrap m-3 bootstrap',
+        class: 'fab fa-bootstrap m-3 bootstrap phoneView',
         alt: 'bootstrap'
     },
 
@@ -112,14 +109,18 @@ function SkillButton() {
                         {
                         images.map((image, idx) => {
                             return (
-                                <img src ={image.photo} alt ={image.alt} className='m-3'
+                                <img src ={image.photo} alt ={image.alt} className='m-3 phoneView2'
                                     key={idx}
-                                    style={
-                                        {height: '100px'}
-                                    }/>
+                                   />
+                                  
                             )
+                             
                         })
-                    } </h1>
+                        
+                    }
+                     <img src = {MERN} alt= 'MERN' className='m-2 MernView'/>
+                     
+                </h1>
                 </div>
             </Collapse>
         </>

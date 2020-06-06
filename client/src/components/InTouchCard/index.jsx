@@ -10,7 +10,7 @@ export default function InTouchCard(){
                <h1>Get In Touch</h1>
             </Card.Header>
             <Card.Body>
-                Blah Blah
+                Blah Blah Blah
             </Card.Body>
         </Card>
         </>

@@ -19,3 +19,21 @@ color: white;
 .react{
   color:lightskyblue
 }
+.phoneView2, .MernView{
+  height:100px;
+}
+
+@media screen and (max-width: 600px) {
+  .phoneView {
+    font-size: 60px;
+
+  }
+  .phoneView2{
+    width: 60px;
+    height: 60px;
+  }
+  .MernView{
+    width:143px;
+    height: 60px
+  }
+}
