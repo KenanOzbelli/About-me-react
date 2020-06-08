@@ -21,6 +21,7 @@
     "nodemon": "^1.18.10"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "handlebars": "^4.7.6",
     "react-bootstrap": "^1.0.0",
     "yarn": "^1.22.4"

@@ -51,7 +51,7 @@
 
 .portBody {
     box-shadow: 5px 5px 10px 5px #445 ;
-    transition: 200ms ease-in-out;
+    transition: 10ms ease-in-out;
     border-radius: .5rem;
     animation: fadeInLeft ease 3s; 
     animation-iteration-count: 1; 
@@ -60,7 +60,7 @@
 @keyframes fadeInLeft {
 0% {
   opacity: 1;
-  transform: translateX(-1000px);
+  transform: translateX(-500px);
 }
 100% {
   opacity: 1;
@@ -71,13 +71,14 @@
 
 .portBody:hover {
     transform: scale(1.00004);
+    transition: all .4s ease-in-out;
     box-shadow: 10px 10px 20px 5px #445;
 }
 
 
 
 .portBodyRight {
-    transition: 200ms ease-in-out;
+    transition: 10ms ease-in-out;
     border-radius: .5rem;
     box-shadow: 5px 5px 10px 5px #445;
     animation: fadeInRight ease 3s; 
@@ -88,7 +89,7 @@
 @keyframes fadeInRight {
 0% {
   opacity: 1;
-  transform: translateX(1000px);
+  transform: translateX(500px);
 }
 100% {
   opacity: 1;
@@ -99,5 +100,6 @@
 
 .portBodyRight:hover {
     transform: scale(1.00004);
+    transition: all .4s ease-in-out;
     box-shadow: 10px 10px 20px 5px #445;
 }

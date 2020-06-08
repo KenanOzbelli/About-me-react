@@ -167,7 +167,7 @@ export default class Portfolio extends Component {
                                     margin: '1rem 1rem'
                                 }
                             }>Technologies Used</p>
-                            <h6>HTML5 - CSS3 - JavaScript - React.js - Mongodb - Mongoose - Multer - Cloudfare - Passport.js</h6>
+                            <h6>HTML5 - CSS3 - JavaScript - React.js - Mongodb - Mongoose - Multer - Cloudinary - Passport.js</h6>
                             <button className="BatonPass p-3"
                                 onClick={
                                     () => (window.location = "https://github.com/KenanOzbelli/batonPass")

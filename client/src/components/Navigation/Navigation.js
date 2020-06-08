@@ -1,10 +1,34 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import {Navbar} from 'react-bootstrap';
+import classnames from 'classnames';
 import './index.css'
+
 class Navigation extends Component {
 
     state = {
-        collapsed: true
+        collapsed: true,
+        prevScrollpos: window.pageYOffset,
+        visible: true
+    }
+    componentDidMount(){
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount(){
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = () => {
+        const { prevScrollpos } = this.state;
+
+        const currentScrollPos = window.pageYOffset;
+        const visible = prevScrollpos > currentScrollPos;
+
+        this.setState({
+            prevScrollpos: 4,
+            visible
+        })
     }
 
     toggleCollapse = () => {
@@ -12,7 +36,7 @@ class Navigation extends Component {
             collapsed: !this.state.collapsed
         });
     }
-
+    
 
     render() {
         const {collapsed} = this.state;
@@ -25,9 +49,9 @@ class Navigation extends Component {
 
         return (
             <div className='Navigation sticky-top text-center'>
-                <nav className='navbar navbar-expand-lg navbar-light p-0 mb-5'
+                <Navbar className={classnames({'navBar': !this.state.visible})}
                     style={
-                        {background: '#6C60BF'}
+                        {background: '#6C60BF', padding:'0', marginBottom:'3rem'}
                 }>
                     <div style={
                         {
@@ -87,7 +111,7 @@ class Navigation extends Component {
 
                         </ul>
                     </div>
-                </nav>
+                </Navbar>
             </div>
         );
     }

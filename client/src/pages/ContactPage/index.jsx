@@ -16,8 +16,9 @@ export default class ContactPage extends Component {
 
     componentDidMount() {
         document.title = 'Kenan Ozbelli | Contact';
-        document.body.style = 'background:none';
-    };
+        document.body.style = 'background:none'
+    
+    }
 
     handleClose = () => {
         this.setState({show: false, errShow: false});
@@ -66,14 +67,18 @@ export default class ContactPage extends Component {
 
         return (
             <>
+            <div className='text-center'>
+                <p style={{color:'#4C0BD9'}}>Would like to get in touch?</p>
+                <h1 className='header'><strong>Contact Me</strong></h1>
+            </div>
                 <Row>
-                    <Col>
-                        <InTouchCard/>
-                    </Col>
                     <Col>
                         <ContactForm onSubmit={
                             this.handleSubmit
                         }/>
+                    </Col>
+                    <Col>
+                    <InTouchCard/>
                     </Col>
                 </Row>
                 <Modal show={
@@ -132,7 +137,7 @@ export default class ContactPage extends Component {
                         </p>
                     </Modal.Body>
                 </Modal>
-            </>
+        </>
         );
     }
 }

@@ -7,6 +7,9 @@
 .contactBtn:hover{
     background: #4C0BD9;
 }
+.contBody{
+    box-shadow: 2px 10px 30px lightgray;
+}
 
 .cardBodyUp{
     animation: topToBottom ease-in 2s;

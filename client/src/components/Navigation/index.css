@@ -1,4 +1,9 @@
 
+.navBar{
+  box-shadow: 10px 10px 20px #445;
+  animation: all 2s ease-out
+}
+
 
 ul li a {
  display:block !important;

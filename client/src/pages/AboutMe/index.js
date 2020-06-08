@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Card, Row, Col } from "react-bootstrap";
-import PDF from "../../Resume/KenanOzbelliResume.pdf";
+import { Card, Row } from "react-bootstrap";
 import Me from "../../Images/IMG_0495_transparent.png";
 import SkillsButton from '../../components/SkillsButton'
 import "./index.css";
@@ -16,7 +15,7 @@ class AboutMe extends Component {
   render() {
     
     return (
-      <div>
+      <>
         <Card
           id="card"
           className="m-5 cardBody bg-light"
@@ -58,71 +57,6 @@ class AboutMe extends Component {
                 </h5>
               </div>
             </Row>
-            <Card.Text className="text-center">
-              <a href={PDF} style={{ textDecoration: "none", color: "black" }}>
-                {" "}
-                a PDF Link to my{" "}
-                <span style={{ color: "rgb(76, 11, 217)" }}>Resume</span>
-              </a>
-            </Card.Text>
-            <h2 className="text-center m-3">
-              {" "}
-              Link to My LinkedIn and Github Porfiles
-            </h2>
-            <hr style={{margin:'20px 200px'}} />
-            <Card>
-              <Row>
-                <Col>
-                  <div style={{ textAlign: "center" }}>
-                    <button
-                      style={{
-                        cursor: "pointer",
-                        border: "none",
-                        background: "white",
-                      }}
-                      onClick={() => {
-                        window.location =
-                          "https://www.linkedin.com/in/kenan-ozbelli-9930b5125/";
-                      }}
-                    >
-                      <h1
-                        style={{
-                          fontSize: "5rem",
-                          color: "blue",
-                          textDecoration: "none",
-                        }}
-                      >
-                        <i className="fab fa-linkedin"></i>
-                      </h1>
-                    </button>
-                  </div>
-                </Col>
-                <Col>
-                  <div style={{ textAlign: "center" }}>
-                    <button
-                      style={{
-                        cursor: "pointer",
-                        border: "none",
-                        background: "white",
-                      }}
-                      onClick={() => {
-                        window.location = "https://github.com/KenanOzbelli";
-                      }}
-                    >
-                      <h1
-                        style={{
-                          fontSize: "5rem",
-                          textDecoration: "none",
-                          color: "black",
-                        }}
-                      >
-                        <i className="fab fa-github-square"></i>
-                      </h1>
-                    </button>
-                  </div>
-                </Col>
-              </Row>
-            </Card>
             <div className='text-center m-3'>
             <SkillsButton/>
             </div>
@@ -149,7 +83,7 @@ class AboutMe extends Component {
             <p> Email: Kenan.Ozbelli@gmail.com</p>
           </Card.Body>
         </Card>
-      </div>
+      </>
     );
   }
 }
