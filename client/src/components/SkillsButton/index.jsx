@@ -87,9 +87,7 @@ function SkillButton() {
             </button>
             <Collapse in={open}>
                 <div id="collapse-text" className="text-center">
-                    <hr style={
-                        {margin: '20px 200px'}
-                    }/>
+                    <hr />
                     <h1 style={
                         {fontSize: '80px'}
                     }>

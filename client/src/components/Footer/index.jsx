@@ -5,7 +5,7 @@ export default function Footer() {
 
     return (
         <>
-            <Row className=' mt-5 m-0 p-2'
+            <Row className='mt-5 p-2'
                 style={
                     {
                         borderTop: '8px solid #4C0BD9',
@@ -14,7 +14,7 @@ export default function Footer() {
             }>
                 <Col>
                     <div className='text-center'>
-                        <p>
+                        <p className='header'>
                             &copy; Copyright Kenan Ozbelli</p>
                         <h3>
                             <button onClick = {() => { window.location = 'https://github.com/KenanOzbelli' }} style={

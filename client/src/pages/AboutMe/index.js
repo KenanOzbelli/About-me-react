@@ -68,7 +68,7 @@ class AboutMe extends Component {
             width: "10rem",
             position: "absolute",
             right: "67px",
-            top: "228px",
+            top: "128px",
             background: "cream",
           }}
         >

@@ -1,0 +1,10 @@
+.errorPage{
+    width:100%;
+}
+
+
+@media screen and (max-width: 600px)  {
+    .errorPage {
+      margin: 10% 0 0 0 0;
+    }
+}
