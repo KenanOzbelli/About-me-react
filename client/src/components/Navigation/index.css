@@ -1,20 +1,17 @@
 
-.navBar{
-  box-shadow: 10px 10px 20px #445;
-  animation: all 2s ease-out
+.navlink{
+  color:white !important;
+  text-decoration: none;
+  border-bottom: 0px solid #0D2840;
+ 
 }
 
 @media only screen and (max-width: 991px){
-.borderTop{
-  margin-left: 3rem;
-  margin-right: .5rem;
-  margin-top:.4rem;
-  color:white;
-  border-Top: .001rem solid #445;
-}
-.navLinks{
-    margin-left: 2rem;
-    color:white;
-    
-}
+  
+  .navlink{
+    color:white !important;
+    text-decoration: none;
+    margin-left:4rem;
+    width:7.5rem;
+  }
 }

@@ -1,0 +1,58 @@
+@media only screen and (min-width:1000px ){
+
+   .touchCard{
+      margin:0;
+      padding-top:9rem;
+   }
+ 
+}
+@media only screen and (min-width:992px ){
+
+   .touchCard{
+      margin:0;
+      padding-top:9rem;
+   }
+  
+ 
+}
+@media only screen and (max-width:991px ){
+
+   .touchCard{
+      margin:3rem;
+   }
+  
+ 
+}
+
+@media only screen and (max-width:700px ){
+ 
+   .touchCard{
+      margin:3rem;
+   }
+   
+ 
+}
+
+@media only screen and (max-width:600px ){
+ 
+   .touchCard{
+      margin:3rem;
+   }
+
+ 
+}
+@media only screen and (max-width:595px ){
+
+   .touchCard{
+      margin:3rem;
+   }
+ 
+}
+@media only screen and (max-width:320px ){
+
+   .touchCard{
+      margin:3rem;
+   }
+
+ 
+}

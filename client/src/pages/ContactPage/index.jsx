@@ -1,9 +1,10 @@
 import React, {Component} from "react";
-import {Modal, Row, Col} from "react-bootstrap";
+import {Modal, Row, Col } from "react-bootstrap";
 import ContactForm from "../../components/ContactForm";
 import InTouchCard from '../../components/InTouchCard';
 import {Redirect} from "react-router-dom";
 import API from "../../lib/API";
+import './index.css';
 import * as emailjs from 'emailjs-com';
 
 export default class ContactPage extends Component {
@@ -71,16 +72,18 @@ export default class ContactPage extends Component {
                 <p style={{color:'#4C0BD9'}}>Would like to get in touch?</p>
                 <h1 className='header'><strong>Contact Me</strong></h1>
             </div>
+           
                 <Row>
-                    <Col>
+                    <Col lg='8' className='animate'>
                         <ContactForm onSubmit={
                             this.handleSubmit
                         }/>
                     </Col>
-                    <Col>
+                    <Col lg='4'className='animate' >
                     <InTouchCard/>
                     </Col>
                 </Row>
+         
                 <Modal show={
                         this.state.show
                     }

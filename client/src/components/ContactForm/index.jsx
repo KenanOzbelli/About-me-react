@@ -32,7 +32,7 @@ export default class ContactForm extends Component {
 
     return (
       <>
-        <Card className="m-5 bg-white contBody p-4">
+        <Card className="bg-white contBody p-4 m-5">
           <Card.Body> 
             <form onSubmit={this.handleSubmit}>
               <div className='mb-2 header'>Name <span className='text-danger'>*</span></div>
@@ -91,10 +91,10 @@ export default class ContactForm extends Component {
             <hr/>
           <section>
             <p className='header'>Contact Information</p>
-            <p><i class="fas fa-envelope text-secondary"></i> <span style={{color:'#445',fontWeight:'bolder', marginLeft:'1rem'}}>Kenan.Ozbelli@gmail.com</span></p>
-            <p><i class="fas fa-phone text-secondary"></i><span style={{color:'#445',fontWeight:'bolder', marginLeft:'1rem'}}>+1 980 621 6153</span></p>        
-            <p><i class="fab fa-linkedin text-secondary"></i><span style={{color:'#445',fontWeight:'bolder', marginLeft:'1rem'}}>Kenan Ozbelli</span></p>        
-          </section>
+            <p style={{width:'20rem'}}><i className="fas fa-envelope text-secondary"></i> <span style={{color:'#445',fontWeight:'bolder', marginLeft:'1rem'}}>Kenan.Ozbelli@gmail.com</span></p>
+            <p><i className="fas fa-phone text-secondary"></i><span style={{color:'#445',fontWeight:'bolder', marginLeft:'1rem'}}>+1 980 621 6153</span></p>        
+            <p><button onClick={() => {window.location = 'https://www.linkedin.com/in/kenan-ozbelli-9930b5125/'}} style={{textDecoration:'none', border:'none', background:'none'}}><i className="fab fa-linkedin text-primary" style={{cursor:'pointer'}}></i><span style={{color:'#445',fontWeight:'bolder', marginLeft:'1rem', cursor:'pointer'}}>Kenan Ozbelli</span></button></p>        
+            </section>
           </Card.Body>
         </Card>
 

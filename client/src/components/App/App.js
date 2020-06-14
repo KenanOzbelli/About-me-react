@@ -7,19 +7,18 @@ import Portfolio from '../../pages/Portfolio';
 import NotFound from '../../pages/NotFound/NotFound';
 import Home from '../../pages/HomePage/index';
 import './App.css';
-
-
 import ContactPage from '../../pages/ContactPage';
 
 class App extends Component {
 
-
   render() {
+   
     return (
       <>
         <div className='App' style={{position: 'relative', minHeight:'100vh'}}>
-          <Navigation />
-     
+       
+        <Navigation/>
+
             <Switch>
               <Route exact path='/' component={Home}/> 
               <Route path='/about-me' component={AboutMe}/>
