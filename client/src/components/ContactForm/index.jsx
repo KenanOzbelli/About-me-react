@@ -93,7 +93,7 @@ export default class ContactForm extends Component {
             <p className='header'>Contact Information</p>
             <p style={{width:'20rem'}}><i className="fas fa-envelope text-secondary"></i> <span style={{color:'#445',fontWeight:'bolder', marginLeft:'1rem'}}>Kenan.Ozbelli@gmail.com</span></p>
             <p><i className="fas fa-phone text-secondary"></i><span style={{color:'#445',fontWeight:'bolder', marginLeft:'1rem'}}>+1 980 621 6153</span></p>        
-            <p><button onClick={() => {window.location = 'https://www.linkedin.com/in/kenan-ozbelli-9930b5125/'}} style={{textDecoration:'none', border:'none', background:'none'}}><i className="fab fa-linkedin text-primary" style={{cursor:'pointer'}}></i><span style={{color:'#445',fontWeight:'bolder', marginLeft:'1rem', cursor:'pointer'}}>Kenan Ozbelli</span></button></p>        
+            <p><button onClick={() => {window.location = 'https://www.linkedin.com/in/kenan-ozbelli-9930b5125/'}} style={{textDecoration:'none', border:'none', background:'none'}}><i className="fab fa-linkedin text-secondary" style={{cursor:'pointer'}}></i><span style={{color:'#445',fontWeight:'bolder', marginLeft:'1rem', cursor:'pointer'}}>Kenan Ozbelli</span></button></p>        
             </section>
           </Card.Body>
         </Card>
