@@ -47,6 +47,7 @@ export default class ContactForm extends Component {
                   id="name"
                   type="name"
                   name="name"
+                  min="1"
                   placeholder="Enter Name"
                   value={name}
                   onChange={this.handleInputChange}
@@ -62,11 +63,16 @@ export default class ContactForm extends Component {
                 <input
                   className="form-control bg-light"
                   id="email"
-                  type="email"
+                  type="text"
                   name="email"
+                  size="20"
+                  min="8"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  required
                   placeholder="email@provider.com"
                   value={email}
                   onChange={this.handleInputChange}
+                  title="Please provide a real email address Please"
                 />
               </div>
               <div className='mb-2 header'>Message</div>

@@ -1,34 +1,33 @@
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
 
-var validateEmail = function(email) {
-    var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    return re.test(email)
-};
+const Schema = mongoose.Schema;
 
 const ContactSchema = new Schema({
     name: {
         type: String,
         trim:true,
-        maxlength:13,
-        require: [true, 'I know you have a Name']
+        require: true,
+        minLength: 4,
+        maxLength: 15
     },
     email: {
         type:String,
-        trim:true,
-        minlength:5,
-        maxlength:20,
-        required: [true, 'Email Required!'],
-        validate: [validateEmail, 'Please fill a valid email address'],
-        match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
-   
+        required: true,
+        lowercase: true
+     
     },
     message:{
-        type: String
+        type: String,
+        trim:true
     }
-});
 
+});
+ContactSchema.path('email').validate(function (email) {
+    var emailRegex12321 = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    return emailRegex12321.test(email); // Assuming email has a text attribute
+ 
+ }, 'The e-mail field cannot be empty.')
 
 let Contact = mongoose.model('Contact', ContactSchema);
 

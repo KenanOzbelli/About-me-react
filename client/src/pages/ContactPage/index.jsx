@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Modal, Row, Col } from "react-bootstrap";
+import {Modal, Row, Col} from "react-bootstrap";
 import ContactForm from "../../components/ContactForm";
 import InTouchCard from '../../components/InTouchCard';
 import {Redirect} from "react-router-dom";
@@ -18,7 +18,7 @@ export default class ContactPage extends Component {
     componentDidMount() {
         document.title = 'Kenan Ozbelli | Contact';
         document.body.style = 'background:none'
-    
+
     }
 
     handleClose = () => {
@@ -26,38 +26,38 @@ export default class ContactPage extends Component {
     };
 
     handleSubmit = (name, email, message) => {
-        if (!name || !email ) {
+        if (!name || !email) {
             this.setState({show: false, errShow: true});
             return;
 
         } else {
-            this.setState({show: true});
+            API.Contacts.create(name, email, message).then((response) => {
+                if (!response.data.errors) {
+                    this.setState({show: true})
+                    setTimeout(() => {
+                        this.setState({redirectToReferrer: true});
+                    }, 5000)
 
-            let templateParams = {
-                from_name: name,
-                to_name: email,
-                name: 'Kenan',
-                message_html: message
-            }
-
-            emailjs.send('gmail', 'template_LYzfi7Zc', templateParams, `user_dcvPcMJFroG6yBnd4rN8z`)
-
-            setTimeout(() => {
-                API.Contacts.create(name, email, message).then((response) => {
-                    if(response){
-                    this.setState({redirectToReferrer: true});
-                    }else{
-                        return;
+                    let templateParams = {
+                        from_name: name,
+                        to_name: email,
+                        name: 'Kenan',
+                        message_html: message
                     }
-                }).catch((err) => {
-                    if (err.response.status === 401) {
-                        this.setState({error: "Sorry, Please try again."});
-                    }
-                });
-            }, 5000);
+                    emailjs.send('gmail', 'template_LYzfi7Zc', templateParams, `user_dcvPcMJFroG6yBnd4rN8z`)
+
+                } else {
+                    this.setState({errShow: true})
+                }
+
+            }).catch((err) => {
+                if (err.response.status === 401) {
+                    this.setState({error: "Sorry, Please try again."});
+                }
+            });
         }
     };
-  
+
     render() {
         const {from} = this.props.location.state || {
             from: {
@@ -73,22 +73,26 @@ export default class ContactPage extends Component {
 
         return (
             <>
-            <div className='text-center'>
-                <p style={{color:'#4C0BD9'}}>Would like to get in touch?</p>
-                <h1 className='header'><strong>Contact Me</strong></h1>
-            </div>
-           
+                <div className='text-center'>
+                    <p style={
+                        {color: '#4C0BD9'}
+                    }>Would like to get in touch?</p>
+                    <h1 className='header'>
+                        <strong>Contact Me</strong>
+                    </h1>
+                </div>
+
                 <Row>
                     <Col lg='8' className='animate'>
                         <ContactForm onSubmit={
                             this.handleSubmit
                         }/>
                     </Col>
-                    <Col lg='4'className='animate' >
-                    <InTouchCard/>
+                    <Col lg='4' className='animate'>
+                        <InTouchCard/>
                     </Col>
                 </Row>
-         
+
                 <Modal show={
                         this.state.show
                     }
@@ -141,11 +145,11 @@ export default class ContactPage extends Component {
                     </Modal.Header>
                     <Modal.Body>
                         <p>
-                            <strong>Hey, you haven't entered name or email. Please re-enter before submitting this form. Thank you!</strong>
+                            <strong>Hey, you haven't entered name or email or a real one. Please re-enter before submitting this form. Thank you!</strong>
                         </p>
                     </Modal.Body>
                 </Modal>
-        </>
+            </>
         );
     }
 }

@@ -24,6 +24,7 @@
     "classnames": "^2.2.6",
     "handlebars": "^4.7.6",
     "react-bootstrap": "^1.0.0",
+    "validator": "^13.1.1",
     "yarn": "^1.22.4"
   }
 }
