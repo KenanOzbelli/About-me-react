@@ -102,7 +102,7 @@ export default class Portfolio extends Component {
                             <Card.Title>
                                 <h5>Flash Card Quiz</h5>
                             </Card.Title>
-                            An Application that quizes your programming skills with different
+                            An Application that quizzes your programming skills with different
                                           catagories and questions.
                         </Card.Body>
                         <ListGroup className="list-group-flush text-center">

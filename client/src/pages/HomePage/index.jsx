@@ -15,7 +15,7 @@ class Home extends Component {
         return (
             <>
             <div style={{textDecoration:'none', border:'none'}} className='animate'>
-                <h1 className='text-center m-3 homeText'>Welcome To My Page</h1>
+                <h1 className='text-center m-3 homeText'>Welcome !!</h1>
             
             
                 <h2 className='text-center m-3 homeText'>
