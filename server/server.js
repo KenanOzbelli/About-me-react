@@ -1,61 +1,60 @@
-
-//-- .env --------------------------------------------------------------------
+// -- .env --------------------------------------------------------------------
 const path = require('path');
 if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config({
-    path: path.resolve(__dirname, '.env')
-  });
+    require('dotenv').config({
+        path: path.resolve(__dirname, '.env')
+    });
 }
 
-//-- Dependencies ------------------------------------------------------------
+// -- Dependencies ------------------------------------------------------------
 const express = require('express');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 
 
-
-//-- Constants ---------------------------------------------------------------
+// -- Constants ---------------------------------------------------------------
 const PORT = process.env.PORT || 3001;
 const LOG_MODE = process.env.NODE_ENV === 'production' ? 'common' : 'dev';
 
-//-- Express -----------------------------------------------------------------
+// -- Express -----------------------------------------------------------------
 const app = express();
 
 
 // -- Mongoose Setup ---------------------------------------------------------
-mongoose.connect(
-  process.env.MONGODB_URI ||
-  'mongodb://localhost/Contactinfo'
-)
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/Contactinfo', {
+    useNewUrlParser: false,
+    useUnifiedTopology: false
+})
 
 mongoose.connection.on('error', err => {
-  console.log(`Mongoose connection err:\n${err}`)
+    console.log(`Mongoose connection err:\n${err}`)
 })
-//-- Middleware --------------------------------------------------------------
+
+// -- Middleware --------------------------------------------------------------
 app.use(logger(LOG_MODE));
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 
-//-- Static Server (Production) ----------------------------------------------
+// -- Static Server (Production) ----------------------------------------------
 if (process.env.NODE_ENV === 'production') {
-  const clientBuildPath = path.join(__dirname, '..', 'client', 'build');
-  console.log(`Client build path: ${clientBuildPath}\n`);
-  app.use(express.static(clientBuildPath));
+    const clientBuildPath = path.join(__dirname, '..', 'client', 'build');
+    console.log(`Client build path: ${clientBuildPath}\n`);
+    app.use(express.static(clientBuildPath));
 }
 
-//-- Controller Routes -------------------------------------------------------
+// -- Controller Routes -------------------------------------------------------
 app.use(require('./controllers'));
 
-//-- React catch-all ---------------------------------------------------------
+// -- React catch-all ---------------------------------------------------------
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
-//-- Main --------------------------------------------------------------------
+// -- Main --------------------------------------------------------------------
 app.listen(PORT, () => {
-  console.log(`🚀 Server listening on port ${PORT}...`);
+    console.log(`🚀 Server listening on port ${PORT}...`);
 });
 
-//-- Export to Tests ---------------------------------------------------------
+// -- Export to Tests ---------------------------------------------------------
 module.exports = app;

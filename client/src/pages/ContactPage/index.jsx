@@ -44,7 +44,11 @@ export default class ContactPage extends Component {
 
             setTimeout(() => {
                 API.Contacts.create(name, email, message).then((response) => {
+                    if(response){
                     this.setState({redirectToReferrer: true});
+                    }else{
+                        return;
+                    }
                 }).catch((err) => {
                     if (err.response.status === 401) {
                         this.setState({error: "Sorry, Please try again."});
@@ -53,7 +57,7 @@ export default class ContactPage extends Component {
             }, 5000);
         }
     };
-
+  
     render() {
         const {from} = this.props.location.state || {
             from: {
@@ -65,6 +69,7 @@ export default class ContactPage extends Component {
         if (redirectToReferrer) {
             return <Redirect to={from}/>;
         }
+        console.log(this.state.error)
 
         return (
             <>
