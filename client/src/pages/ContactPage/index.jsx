@@ -145,7 +145,7 @@ export default class ContactPage extends Component {
                     </Modal.Header>
                     <Modal.Body>
                         <p>
-                            <strong>Hey, you haven't entered name or email or a real one. Please re-enter before submitting this form. Thank you!</strong>
+                            <strong>Hey, you haven't entered either name, email or a real email address. Please re-enter before submitting this form. Thank you!</strong>
                         </p>
                     </Modal.Body>
                 </Modal>
