@@ -32,344 +32,347 @@ export default class Portfolio extends Component {
                     }>Portfolio</h1>
                     <hr/>
                 </div>
-                <CardDeck className="m-5">
-                    <Card className="portBody">
-                        <Card.Img src={Projone}
-                            style={
-                                {
-                                    width: "100%",
-                                    borderRadius: ".5rem .5rem 0 0"
-                                }
-                            }/>
-                        <Card.Body>
-                            <Card.Title>
-                                <h5>Projone</h5>
-                            </Card.Title>
-                            An Application that searches for recipies, and gives a calorie
-                                          count and other nutritional facts.
-                        </Card.Body>
+                <div class='overflow-hidden'>
+                    <CardDeck className="m-5">
+                        <Card className="portBody">
+                            <Card.Img src={Projone}
+                                style={
+                                    {
+                                        width: "100%",
+                                        borderRadius: ".5rem .5rem 0 0"
+                                    }
+                                }/>
+                            <Card.Body>
+                                <Card.Title>
+                                    <h5>Projone</h5>
+                                </Card.Title>
+                                An Application that searches for recipies, and gives a calorie
+                                                                          count and other nutritional facts.
+                            </Card.Body>
 
 
-                        <ListGroup className="list-group-flush text-center">
-                            <p style={
-                                {
-                                    borderBottom: '1px solid lightgrey',
-                                    margin: '1rem 1rem'
-                                }
-                            }>Technologies Used</p>
-                            <h6>HTML5 - CSS3 - JQuery - Bulma - Ajax</h6>
-                            <button className="Projone p-3"
-                                onClick={
-                                    () => (window.location = "https://github.com/KenanOzbelli/projone")
-                                }
+                            <ListGroup className="list-group-flush text-center">
+                                <p style={
+                                    {
+                                        borderBottom: '1px solid lightgrey',
+                                        margin: '1rem 1rem'
+                                    }
+                                }>Technologies Used</p>
+                                <h6>HTML5 - CSS3 - JQuery - Bulma - Ajax</h6>
+                                <button className="Projone p-3"
+                                    onClick={
+                                        () => (window.location = "https://github.com/KenanOzbelli/projone")
+                                    }
+                                    style={
+                                        {
+                                            border: "none",
+                                            borderBottom: "1px solid white",
+                                            textDecoration: "none",
+                                            color: "white"
+                                        }
+                                }>
+                                    <i className="fab fa-github"></i>
+                                    GitHub
+                                </button>
+                                <button className="Projone p-3"
+                                    onClick={
+                                        () => (window.location = "https://kenanozbelli.github.io/projone/")
+                                    }
+                                    style={
+                                        {
+                                            border: "none",
+                                            borderRadius: "0 0 .5rem .5rem",
+                                            textDecoration: "none",
+                                            color: "white"
+                                        }
+                                }>
+                                    <i className="fas fa-link"></i>
+                                    App
+                                </button>
+                            </ListGroup>
+                        </Card>
+                        <Card className="portBody">
+                            <Card.Img src={FlashCardQuiz}
                                 style={
                                     {
-                                        border: "none",
-                                        borderBottom: "1px solid white",
-                                        textDecoration: "none",
-                                        color: "white"
+                                        width: "100%",
+                                        borderRadius: ".5rem .5rem 0 0"
                                     }
-                            }>
-                                <i className="fab fa-github"></i>
-                                GitHub
-                            </button>
-                            <button className="Projone p-3"
-                                onClick={
-                                    () => (window.location = "https://kenanozbelli.github.io/projone/")
-                                }
+                                }/>
+                            <Card.Body>
+                                <Card.Title>
+                                    <h5>Flash Card Quiz</h5>
+                                </Card.Title>
+                                An Application that quizzes your programming skills with different
+                                                                          catagories and questions.
+                            </Card.Body>
+                            <ListGroup className="list-group-flush text-center">
+                                <p style={
+                                    {
+                                        borderBottom: '1px solid lightgrey',
+                                        margin: '1rem 1rem'
+                                    }
+                                }>Technologies Used</p>
+                                <h6>HTML5 - CSS3 - JQuery - Bulma - HandleBars.js - Node.js/Express - Sequilize - MySql - Travis - Passport.js</h6>
+                                <button className="FlashCard p-3"
+                                    onClick={
+                                        () => (window.location = "https://github.com/KenanOzbelli/flash-card-quiz")
+                                    }
+                                    style={
+                                        {
+                                            border: "none",
+                                            borderBottom: "1px solid white",
+                                            textDecoration: "none",
+                                            color: "white"
+                                        }
+                                }>
+                                    <i className="fab fa-github"></i>
+                                    GitHub
+                                </button>
+                                <button className="FlashCard p-3"
+                                    onClick={
+                                        () => (window.location = "https://morning-dusk-12730.herokuapp.com/")
+                                    }
+                                    style={
+                                        {
+                                            border: "none",
+                                            borderRadius: "0 0 .5rem .5rem",
+                                            textDecoration: "none",
+                                            color: "white"
+                                        }
+                                }>
+                                    <i className="fas fa-link"></i>
+                                    App
+                                </button>
+                            </ListGroup>
+                        </Card>
+                        <Card className="portBody">
+                            <Card.Img src={BatonPass}
                                 style={
                                     {
-                                        border: "none",
-                                        borderRadius: "0 0 .5rem .5rem",
-                                        textDecoration: "none",
-                                        color: "white"
+                                        width: "100%",
+                                        borderRadius: ".5rem .5rem 0 0"
                                     }
-                            }>
-                                <i className="fas fa-link"></i>
-                                App
-                            </button>
-                        </ListGroup>
-                    </Card>
-                    <Card className="portBody">
-                        <Card.Img src={FlashCardQuiz}
-                            style={
-                                {
-                                    width: "100%",
-                                    borderRadius: ".5rem .5rem 0 0"
-                                }
-                            }/>
-                        <Card.Body>
-                            <Card.Title>
-                                <h5>Flash Card Quiz</h5>
-                            </Card.Title>
-                            An Application that quizzes your programming skills with different
-                                          catagories and questions.
-                        </Card.Body>
-                        <ListGroup className="list-group-flush text-center">
-                            <p style={
-                                {
-                                    borderBottom: '1px solid lightgrey',
-                                    margin: '1rem 1rem'
-                                }
-                            }>Technologies Used</p>
-                            <h6>HTML5 - CSS3 - JQuery - Bulma - HandleBars.js - Node.js/Express - Sequilize - MySql - Travis - Passport.js</h6>
-                            <button className="FlashCard p-3"
-                                onClick={
-                                    () => (window.location = "https://github.com/KenanOzbelli/flash-card-quiz")
-                                }
+                                }/>
+                            <Card.Body>
+                                <Card.Title>
+                                    <h5>Baton Pass</h5>
+                                </Card.Title>
+                                An Application that helps your practice your art skills, and time
+                                                                          yourself drawing.
+                            </Card.Body>
+                            <ListGroup className="list-group-flush text-center">
+                                <p style={
+                                    {
+                                        borderBottom: '1px solid lightgrey',
+                                        margin: '1rem 1rem'
+                                    }
+                                }>Technologies Used</p>
+                                <h6>HTML5 - CSS3 - JavaScript - React.js - Mongodb - Mongoose - Multer - Cloudinary - Passport.js</h6>
+                                <button className="BatonPass p-3"
+                                    onClick={
+                                        () => (window.location = "https://github.com/KenanOzbelli/batonPass")
+                                    }
+                                    style={
+                                        {
+                                            border: "none",
+                                            borderBottom: "1px solid white",
+                                            textDecoration: "none",
+                                            color: "white"
+                                        }
+                                }>
+                                    <i className="fab fa-github"></i>
+                                    GitHub
+                                </button>
+                                <button className="BatonPass p-3"
+                                    onClick={
+                                        () => (window.location = "https://mighty-meadow-35484.herokuapp.com/")
+                                    }
+                                    style={
+                                        {
+                                            border: "none",
+                                            borderRadius: "0 0 .5rem .5rem",
+                                            cursor: "pointer",
+                                            textDecoration: "none",
+                                            color: "white"
+                                        }
+                                }>
+                                    <i className="fas fa-link"></i>
+                                    App
+                                </button>
+                            </ListGroup>
+                        </Card>
+                    </CardDeck>
+                    <CardDeck className="m-5">
+                        <Card className="portBodyRight">
+                            <Card.Img src={EmployeeDirect}
                                 style={
                                     {
-                                        border: "none",
-                                        borderBottom: "1px solid white",
-                                        textDecoration: "none",
-                                        color: "white"
+                                        width: "100%",
+                                        borderRadius: ".5rem .5rem 0 0"
                                     }
-                            }>
-                                <i className="fab fa-github"></i>
-                                GitHub
-                            </button>
-                            <button className="FlashCard p-3"
-                                onClick={
-                                    () => (window.location = "https://morning-dusk-12730.herokuapp.com/")
-                                }
+                                }/>
+                            <Card.Body>
+                                <Card.Title>
+                                    <h5>Employee Directory</h5>
+                                </Card.Title>
+                                An Application uses a database that filters through all of the
+                                                                          employees to create a Directory and even is able to alphabetically
+                                                                          sort and also search for a specific person.
+                            </Card.Body>
+                            <ListGroup className="list-group-flush text-center">
+                                <p style={
+                                    {
+                                        borderBottom: '1px solid lightgrey',
+                                        margin: '1rem 1rem'
+                                    }
+                                }>Technologies Used</p>
+                                <h6>HTML5 - CSS3 - React.js - Axios - JavaScript
+                                </h6>
+                                <button className="EmployeeDir p-3"
+                                    onClick={
+                                        () => (window.location = "https://github.com/KenanOzbelli/Employee-Directory")
+                                    }
+                                    style={
+                                        {
+                                            border: "none",
+                                            borderBottom: "1px solid white",
+                                            textDecoration: "none",
+                                            color: "white"
+                                        }
+                                }>
+                                    <i className="fab fa-github"></i>
+                                    GitHub
+                                </button>
+                                <button className="EmployeeDir p-3"
+                                    onClick={
+                                        () => (window.location = "https://rhubarb-custard-30671.herokuapp.com/")
+                                    }
+                                    style={
+                                        {
+                                            border: "none",
+                                            borderRadius: "0 0 .5rem .5rem",
+                                            textDecoration: "none",
+                                            color: "white"
+                                        }
+                                }>
+                                    <i className="fas fa-link"></i>
+                                    App
+                                </button>
+                            </ListGroup>
+                        </Card>
+                        <Card className="portBodyRight">
+                            <Card.Img src={FitnessTracker}
                                 style={
                                     {
-                                        border: "none",
-                                        borderRadius: "0 0 .5rem .5rem",
-                                        textDecoration: "none",
-                                        color: "white"
+                                        width: "100%",
+                                        borderRadius: ".5rem .5rem 0 0"
                                     }
-                            }>
-                                <i className="fas fa-link"></i>
-                                App
-                            </button>
-                        </ListGroup>
-                    </Card>
-                    <Card className="portBody">
-                        <Card.Img src={BatonPass}
-                            style={
-                                {
-                                    width: "100%",
-                                    borderRadius: ".5rem .5rem 0 0"
-                                }
-                            }/>
-                        <Card.Body>
-                            <Card.Title>
-                                <h5>Baton Pass</h5>
-                            </Card.Title>
-                            An Application that helps your practice your art skills, and time
-                                          yourself drawing.
-                        </Card.Body>
-                        <ListGroup className="list-group-flush text-center">
-                            <p style={
-                                {
-                                    borderBottom: '1px solid lightgrey',
-                                    margin: '1rem 1rem'
-                                }
-                            }>Technologies Used</p>
-                            <h6>HTML5 - CSS3 - JavaScript - React.js - Mongodb - Mongoose - Multer - Cloudinary - Passport.js</h6>
-                            <button className="BatonPass p-3"
-                                onClick={
-                                    () => (window.location = "https://github.com/KenanOzbelli/batonPass")
-                                }
+                                }/>
+                            <Card.Body>
+                                <Card.Title>
+                                    <h5>Fitness Tracker</h5>
+                                </Card.Title>
+                                An Application that Tracks your fitness routine and displays it
+                                                                          for you to see. It also includes a feature which shows a pie chart
+                                                                          for you to look at measurement wise.
+                            </Card.Body>
+                            <ListGroup className="list-group-flush text-center">
+                                <p style={
+                                    {
+                                        borderBottom: '1px solid lightgrey',
+                                        margin: '1rem 1rem'
+                                    }
+                                }>Technologies Used</p>
+                                <h6>HTML5 - CSS3 - JavaScript - Mongodb - Mongoose - Node.js</h6>
+                                <button className="FitnessTrack p-3"
+                                    onClick={
+                                        () => (window.location = "https://github.com/KenanOzbelli/fitness_tracker")
+                                    }
+                                    style={
+                                        {
+                                            border: "none",
+                                            borderBottom: "1px solid white",
+                                            bordertextDecoration: "none",
+                                            color: "white"
+                                        }
+                                }>
+                                    <i className="fab fa-github"></i>
+                                    GitHub
+                                </button>
+                                <button className="FitnessTrack p-3"
+                                    onClick={
+                                        () => (window.location = "https://arcane-shore-02447.herokuapp.com/")
+                                    }
+                                    style={
+                                        {
+                                            border: "none",
+                                            borderRadius: "0 0 .5rem .5rem",
+                                            textDecoration: "none",
+                                            color: "white"
+                                        }
+                                }>
+                                    <i className="fas fa-link"></i>
+                                    App
+                                </button>
+                            </ListGroup>
+                        </Card>
+                        <Card className="portBodyRight">
+                            <Card.Img src={Password}
                                 style={
                                     {
-                                        border: "none",
-                                        borderBottom: "1px solid white",
-                                        textDecoration: "none",
-                                        color: "white"
+                                        width: "100%",
+                                        borderRadius: ".5rem .5rem 0 0"
                                     }
-                            }>
-                                <i className="fab fa-github"></i>
-                                GitHub
-                            </button>
-                            <button className="BatonPass p-3"
-                                onClick={
-                                    () => (window.location = "https://mighty-meadow-35484.herokuapp.com/")
-                                }
-                                style={
+                                }/>
+                            <Card.Body>
+                                <Card.Title>
+                                    <h5>Password Generator</h5>
+                                </Card.Title>
+                                An Application that Generates a random password.
+                            </Card.Body>
+                            <ListGroup className="list-group-flush text-center">
+                                <p style={
                                     {
-                                        border: "none",
-                                        borderRadius: "0 0 .5rem .5rem",
-                                        cursor: "pointer",
-                                        textDecoration: "none",
-                                        color: "white"
+                                        borderBottom: '1px solid lightgrey',
+                                        margin: '1rem 1rem'
                                     }
-                            }>
-                                <i className="fas fa-link"></i>
-                                App
-                            </button>
-                        </ListGroup>
-                    </Card>
-                </CardDeck>
-                <CardDeck className="m-5">
-                    <Card className="portBodyRight">
-                        <Card.Img src={EmployeeDirect}
-                            style={
-                                {
-                                    width: "100%",
-                                    borderRadius: ".5rem .5rem 0 0"
-                                }
-                            }/>
-                        <Card.Body>
-                            <Card.Title>
-                                <h5>Employee Directory</h5>
-                            </Card.Title>
-                            An Application uses a database that filters through all of the
-                                          employees to create a Directory and even is able to alphabetically
-                                          sort and also search for a specific person.
-                        </Card.Body>
-                        <ListGroup className="list-group-flush text-center">
-                            <p style={
-                                {
-                                    borderBottom: '1px solid lightgrey',
-                                    margin: '1rem 1rem'
-                                }
-                            }>Technologies Used</p>
-                            <h6>HTML5 - CSS3 - React.js - Axios - JavaScript </h6>
-                            <button className="EmployeeDir p-3"
-                                onClick={
-                                    () => (window.location = "https://github.com/KenanOzbelli/Employee-Directory")
-                                }
-                                style={
-                                    {
-                                        border: "none",
-                                        borderBottom: "1px solid white",
-                                        textDecoration: "none",
-                                        color: "white"
+                                }>Technologies Used</p>
+                                <h6>HTML5 - CSS3 - JavaScript</h6>
+                                <button className="PassWord p-3"
+                                    onClick={
+                                        () => (window.location = "https://github.com/KenanOzbelli/Password-Generator")
                                     }
-                            }>
-                                <i className="fab fa-github"></i>
-                                GitHub
-                            </button>
-                            <button className="EmployeeDir p-3"
-                                onClick={
-                                    () => (window.location = "https://rhubarb-custard-30671.herokuapp.com/")
-                                }
-                                style={
-                                    {
-                                        border: "none",
-                                        borderRadius: "0 0 .5rem .5rem",
-                                        textDecoration: "none",
-                                        color: "white"
+                                    style={
+                                        {
+                                            border: "none",
+                                            borderBottom: "1px solid white",
+                                            bordertextDecoration: "none",
+                                            color: "white"
+                                        }
+                                }>
+                                    <i className="fab fa-github"></i>
+                                    GitHub
+                                </button>
+                                <button className="PassWord p-3"
+                                    onClick={
+                                        () => (window.location = "https://kenanozbelli.github.io/Password-Generator/")
                                     }
-                            }>
-                                <i className="fas fa-link"></i>
-                                App
-                            </button>
-                        </ListGroup>
-                    </Card>
-                    <Card className="portBodyRight">
-                        <Card.Img src={FitnessTracker}
-                            style={
-                                {
-                                    width: "100%",
-                                    borderRadius: ".5rem .5rem 0 0"
-                                }
-                            }/>
-                        <Card.Body>
-                            <Card.Title>
-                                <h5>Fitness Tracker</h5>
-                            </Card.Title>
-                            An Application that Tracks your fitness routine and displays it
-                                          for you to see. It also includes a feature which shows a pie chart
-                                          for you to look at measurement wise.
-                        </Card.Body>
-                        <ListGroup className="list-group-flush text-center">
-                            <p style={
-                                {
-                                    borderBottom: '1px solid lightgrey',
-                                    margin: '1rem 1rem'
-                                }
-                            }>Technologies Used</p>
-                            <h6>HTML5 - CSS3 - JavaScript - Mongodb - Mongoose - Node.js</h6>
-                            <button className="FitnessTrack p-3"
-                                onClick={
-                                    () => (window.location = "https://github.com/KenanOzbelli/fitness_tracker")
-                                }
-                                style={
-                                    {
-                                        border: "none",
-                                        borderBottom: "1px solid white",
-                                        bordertextDecoration: "none",
-                                        color: "white"
-                                    }
-                            }>
-                                <i className="fab fa-github"></i>
-                                GitHub
-                            </button>
-                            <button className="FitnessTrack p-3"
-                                onClick={
-                                    () => (window.location = "https://arcane-shore-02447.herokuapp.com/")
-                                }
-                                style={
-                                    {
-                                        border: "none",
-                                        borderRadius: "0 0 .5rem .5rem",
-                                        textDecoration: "none",
-                                        color: "white"
-                                    }
-                            }>
-                                <i className="fas fa-link"></i>
-                                App
-                            </button>
-                        </ListGroup>
-                    </Card>
-                    <Card className="portBodyRight">
-                        <Card.Img src={Password}
-                            style={
-                                {
-                                    width: "100%",
-                                    borderRadius: ".5rem .5rem 0 0"
-                                }
-                            }/>
-                        <Card.Body>
-                            <Card.Title>
-                                <h5>Password Generator</h5>
-                            </Card.Title>
-                            An Application that Generates a random password.
-                        </Card.Body>
-                        <ListGroup className="list-group-flush text-center">
-                            <p style={
-                                {
-                                    borderBottom: '1px solid lightgrey',
-                                    margin: '1rem 1rem'
-                                }
-                            }>Technologies Used</p>
-                            <h6>HTML5 - CSS3 - JavaScript</h6>
-                            <button className="PassWord p-3"
-                                onClick={
-                                    () => (window.location = "https://github.com/KenanOzbelli/Password-Generator")
-                                }
-                                style={
-                                    {
-                                        border: "none",
-                                        borderBottom: "1px solid white",
-                                        bordertextDecoration: "none",
-                                        color: "white"
-                                    }
-                            }>
-                                <i className="fab fa-github"></i>
-                                GitHub
-                            </button>
-                            <button className="PassWord p-3"
-                                onClick={
-                                    () => (window.location = "https://kenanozbelli.github.io/Password-Generator/")
-                                }
-                                style={
-                                    {
-                                        border: "none",
-                                        borderRadius: "0 0 .5rem .5rem",
-                                        textDecoration: "none",
-                                        color: "white"
-                                    }
-                            }>
-                                <i className="fas fa-link"></i>
-                                App
-                            </button>
-                        </ListGroup>
-                    </Card>
-                </CardDeck>
+                                    style={
+                                        {
+                                            border: "none",
+                                            borderRadius: "0 0 .5rem .5rem",
+                                            textDecoration: "none",
+                                            color: "white"
+                                        }
+                                }>
+                                    <i className="fas fa-link"></i>
+                                    App
+                                </button>
+                            </ListGroup>
+                        </Card>
+                    </CardDeck>
+                </div>
             </>
         );
     }
