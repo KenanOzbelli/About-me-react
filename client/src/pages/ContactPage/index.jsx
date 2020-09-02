@@ -82,7 +82,7 @@ export default class ContactPage extends Component {
                     </h1>
                 </div>
 
-                <Row>
+                <Row class='overflow-hidden'>
                     <Col lg='8' className='animate'>
                         <ContactForm onSubmit={
                             this.handleSubmit
